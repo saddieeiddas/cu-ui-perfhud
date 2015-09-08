@@ -1,0 +1,11 @@
+{
+  "name": "perfhud",
+  "mainFile": "perfhud/index.html",
+  "rect": {
+    "left": 1040,
+    "top": 0,
+    "right": 1440,
+    "bottom": 900
+  },
+  "handlesInput": false
+}

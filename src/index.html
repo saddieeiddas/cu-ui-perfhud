@@ -1,0 +1,35 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfhud</title>
+  <link rel="stylesheet" href="../lib/cu-styles/cu-styles.css">
+  <link rel="stylesheet" href="css/perfhud.css">
+</head>
+<body>
+<div id="hud-container">
+
+  <div class="cu-window cu-window-transparent cu-window-auto-size">
+    <div class="cu-window-content">
+
+      <h1 id="hud-fps"></h1>
+
+      <div class="cu-window-actions">
+        <a id="hud-minimize" class="cu-window-minimize"></a>
+        <a id="hud-maximize" class="cu-window-maximize"></a>
+      </div>
+
+      <div id="hud-content">
+        <div id="hud-vfx-container"></div>
+        <div id="hud-net-container"></div>
+        <div id="hud-phys-container"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/perfhud.js"></script>
+</body>
+</html>
