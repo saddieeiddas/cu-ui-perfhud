@@ -1,4 +1,4 @@
-/*
+/**
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -10,7 +10,6 @@
 import * as cu from 'cu-core';
 import * as React from 'react';
 import $ from 'jquery';
-
 import FpsHud from './fps/FpsHud';
 import VfxHud from './vfx/VfxHud';
 import NetHud from './net/NetHud';

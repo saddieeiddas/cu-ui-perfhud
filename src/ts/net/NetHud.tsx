@@ -1,4 +1,4 @@
-/*
+/**
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -8,7 +8,7 @@ import * as cu from 'cu-core';
 import * as React from 'react';
 
 export class NetHudProps {
-  pollInterval:number = 10;
+  pollInterval: number = 10;
 }
 
 export class NetHudState {
@@ -20,20 +20,20 @@ export class NetHudStat {
   public value: any;
   public error: boolean;
 
-  constructor(label:string, value:any, error:boolean) {
+  constructor(label: string, value: any, error: boolean) {
     this.label = label;
     this.value = value;
     this.error = error;
   }
 
-  public errorClass():string {
+  public errorClass(): string {
     return this.error ? 'error' : '';
   }
 }
 
 export default class NetHud extends React.Component<NetHudProps, NetHudState> {
 
-  constructor(props:NetHudProps) {
+  constructor(props: NetHudProps) {
     super(props);
     this.state = this.buildState();
     setInterval(this.tick.bind(this), props.pollInterval);
@@ -63,14 +63,14 @@ export default class NetHud extends React.Component<NetHudProps, NetHudState> {
       <div id="hud-net">
         <table>
           <tbody>
-          {this.state.stats.map(function(stat:NetHudStat, i: number){
-            return (
-              <tr>
-                <td>{stat.label}</td>
-                <td className={stat.errorClass()}>{stat.value}</td>
-              </tr>
-            );
-          })}
+            {this.state.stats.map((stat: NetHudStat, i: number) => {
+              return (
+                <tr>
+                  <td>{stat.label}</td>
+                  <td className={stat.errorClass() }>{stat.value}</td>
+                </tr>
+              );
+            }) }
           </tbody>
         </table>
       </div>

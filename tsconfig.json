@@ -1,11 +1,41 @@
 {
-  "compilerOptions": {
-    "target": "es6",
-    "noImplicitAny": true,
-    "removeComments": false,
-    "outDir": "./tmp",
-    "sourceMap": false,
-    "definition": true,
-    "jsx": "react"
-  }
+    "compilerOptions": {
+        "target": "es6",
+        "noImplicitAny": true,
+        "removeComments": false,
+        "outDir": "./tmp",
+        "sourceMap": false,
+        "jsx": "react"
+    },
+    "formatCodeOptions": {
+        "indentSize": 2,
+        "tabSize": 2,
+        "newLineCharacter": "\r\n",
+        "convertTabsToSpaces": true,
+        "insertSpaceAfterCommaDelimiter": true,
+        "insertSpaceAfterSemicolonInForStatements": true,
+        "insertSpaceBeforeAndAfterBinaryOperators": true,
+        "insertSpaceAfterKeywordsInControlFlowStatements": true,
+        "insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+        "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+        "placeOpenBraceOnNewLineForFunctions": false,
+        "placeOpenBraceOnNewLineForControlBlocks": false
+    },
+    "compileOnSave": false,
+    "buildOnSave": false,
+    "filesGlob": [
+        "./src/**/*.ts",
+        "./src/**/*.tsx"
+    ],
+    "files": [
+        "./src/ts/definitions/jquery.d.ts",
+        "./src/ts/vfx/PerfhudParser.ts",
+        "./src/tsd/react/react.d.ts",
+        "./src/tsd/tsd.d.ts",
+        "./src/ts/fps/FpsHud.tsx",
+        "./src/ts/main.tsx",
+        "./src/ts/net/NetHud.tsx",
+        "./src/ts/phys/PhysHud.tsx",
+        "./src/ts/vfx/VfxHud.tsx"
+    ]
 }
