@@ -28,14 +28,16 @@
         "./src/**/*.tsx"
     ],
     "files": [
+        "./src/ts/definitions/classnames.d.ts",
         "./src/ts/definitions/jquery.d.ts",
-        "./src/ts/vfx/PerfhudParser.ts",
+        "./src/ts/render/PerfhudParser.ts",
         "./src/tsd/react/react.d.ts",
         "./src/tsd/tsd.d.ts",
         "./src/ts/fps/FpsHud.tsx",
         "./src/ts/main.tsx",
-        "./src/ts/net/NetHud.tsx",
-        "./src/ts/phys/PhysHud.tsx",
-        "./src/ts/vfx/VfxHud.tsx"
+        "./src/ts/network/NetworkHud.tsx",
+        "./src/ts/physics/PhysicsHud.tsx",
+        "./src/ts/render/RenderHud.tsx",
+        "./src/ts/select/Select.tsx"
     ]
 }

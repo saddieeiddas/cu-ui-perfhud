@@ -4,8 +4,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-@import "perfhud";
-@import "fps";
-@import "render";
-@import "network";
-@import "physics";
+#hud-fps {
+  text-align: center;
+  span {
+    font-size: 120%;
+  }
+  small {
+    font-size: 80%;
+  }
+}
