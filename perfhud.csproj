@@ -31,14 +31,21 @@
   <ItemGroup>
     <Content Include="src\index.html"/>
     <Content Include="src\perfhud.ui"/>
+    <Content Include="src\sass\_fps.scss"/>
+    <Content Include="src\sass\_network.scss"/>
+    <Content Include="src\sass\_perfhud.scss"/>
+    <Content Include="src\sass\_physics.scss"/>
+    <Content Include="src\sass\_render.scss"/>
     <Content Include="src\sass\main.scss"/>
-    <TypeScriptCompile Include="src\ts\main.tsx"/>
+    <TypeScriptCompile Include="src\ts\definitions\classnames.d.ts"/>
     <TypeScriptCompile Include="src\ts\definitions\jquery.d.ts"/>
     <TypeScriptCompile Include="src\ts\fps\FpsHud.tsx"/>
-    <TypeScriptCompile Include="src\ts\net\NetHud.tsx"/>
-    <TypeScriptCompile Include="src\ts\phys\PhysHud.tsx"/>
-    <TypeScriptCompile Include="src\ts\vfx\PerfhudParser.ts"/>
-    <TypeScriptCompile Include="src\ts\vfx\VfxHud.tsx"/>
+    <TypeScriptCompile Include="src\ts\main.tsx"/>
+    <TypeScriptCompile Include="src\ts\network\NetworkHud.tsx"/>
+    <TypeScriptCompile Include="src\ts\physics\PhysicsHud.tsx"/>
+    <TypeScriptCompile Include="src\ts\render\PerfhudParser.ts"/>
+    <TypeScriptCompile Include="src\ts\render\RenderHud.tsx"/>
+    <TypeScriptCompile Include="src\ts\select\Select.tsx"/>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

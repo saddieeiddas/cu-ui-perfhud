@@ -1,6 +1,6 @@
 {
   "name": "perfhud",
-  "mainFile": "perfhud/index.html",
+  "mainFile": "index.html",
   "rect": {
     "left": 1040,
     "top": 0,
